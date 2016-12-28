@@ -21,6 +21,12 @@ html {
   background-color: $off-white;
 }
 
+h1, h2, h3, p,
+md-card-title,
+md-card-subtitle {
+    font-family: slab;
+}
+
 body {
   background-color: $off-white;
 }
