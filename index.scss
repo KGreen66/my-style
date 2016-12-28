@@ -25,29 +25,29 @@ body {
   background-color: $off-white;
 }
 
-md-content {
-  width: 100%;
-}
-
-[layout=row] {
-  flex-direction: row;
-}
-
-.techs {
-  display: flex;
-  flex-flow: row wrap;
-
-  md-card {
-    width: 30%;
-
-    img.pull-right {
-      float: right;
-      width: 100px;
-    }
-  }
-}
-
 .shadow-1 {
   box-shadow: 1px 1px 10px rgba(0,0,0,.1);
 }
 
+/*material edits*/
+
+md-content {
+  width: 100%;
+}
+
+md-card {
+  margin: 5px;
+
+  img.pull-right {
+    float: right;
+    width: 100px;
+  }
+}
+
+md-input-container {
+    width: 100%;
+}
+
+.md-button-wrapper i {
+    margin-top: 2px;
+}
