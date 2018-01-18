@@ -45,16 +45,21 @@ $off-white: #f5f5f5;
 }
 
 html {
-  font-family: 'slab';
+  font-family: slab !important;
   background-color: $off-white;
+}
+
+strong {
+  text-transform: uppercase;
+  font-family: sand;
 }
 
 //default to slab font
 h1, h2, h3, p,
 button span,
-md-card-title,
-md-card-subtitle {
-    font-family: slab;
+mat-card-title,
+mat-card-subtitle {
+    font-family: slab !important;
 }
 
 body {
@@ -87,7 +92,6 @@ section.jumbotron {
   text-align: center;
 
   h1 {
-    font-family: 'sand';
     font-size: 3em;
   }
 }
@@ -116,11 +120,11 @@ h1.header {
 
 /*material edits*/
 
-md-content {
+mat-content {
   width: 100%;
 }
 
-md-card {
+mat-card {
   margin: 5px;
 
   img.pull-right {
@@ -129,10 +133,10 @@ md-card {
   }
 }
 
-md-input-container {
+mat-input-container {
     width: 100%;
 }
 
-.md-button-wrapper i {
+.mat-button-wrapper i {
     margin-top: 2px;
 }
