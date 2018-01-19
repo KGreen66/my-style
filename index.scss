@@ -1,3 +1,5 @@
+// COLOR PRESETS
+
 $white: #fff;
 $off-white: #f5f5f5;
 
@@ -16,6 +18,89 @@ $off-white: #f5f5f5;
 [back-off] {
   background: $off-white !important;
 }
+
+// FLEX PRESETS
+
+[row] {
+  display: flex;
+  flex-direction: row;
+}
+
+[column] {
+  display: flex;
+  flex-direction: column;
+}
+
+[wrap] {
+  flex-wrap: wrap;
+}
+
+.flow-start {
+  justify-content: flex-start;
+}
+
+.flow-end {
+  justify-content: flex-end;
+}
+
+.flow-center {
+  justify-content: center;
+}
+
+.flow-even {
+  justify-content: space-evenly;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-stretch {
+  align-content: stretch;
+}
+
+@for $i from 1 through 100 {
+
+  .flex-#{$i} {
+    // flex: 1 1 0% + $i;
+    width: 0% + $i;
+  }
+
+  .fixed-#{$i * 10} {
+    width: 10px * $i;
+  }
+
+  .font-#{$i} {
+    font-size: 0px + $i;
+  }
+
+  .down-#{$i} {
+    margin-top: 0px + $i;
+  }
+
+  .up-#{$i} {
+    margin-top: 0px - $i;
+  }
+
+}
+
+// FONT PRESETS
 
 @font-face {
   font-family: 'slab';
@@ -102,7 +187,7 @@ h1.header {
 
 .header {
     text-align: center;
-    margin: 20px;
+    margin: 0px;
     border-bottom: rgba(0,0,0,.1) thin solid;
 }
 
@@ -116,6 +201,10 @@ h1.header {
 
 .spacer {
   height: 75px;
+}
+
+.no-pad {
+  padding: 0px;
 }
 
 /*material edits*/
