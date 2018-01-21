@@ -78,7 +78,6 @@ $off-white: #f5f5f5;
 @for $i from 1 through 100 {
 
   .flex-#{$i} {
-    // flex: 1 1 0% + $i;
     width: 0% + $i;
   }
 
@@ -90,6 +89,10 @@ $off-white: #f5f5f5;
     font-size: 0px + $i;
   }
 
+  .em-#{$i} {
+    font-size: 0em + ($i * .1);
+  }
+
   .down-#{$i} {
     margin-top: 0px + $i;
   }
@@ -98,6 +101,38 @@ $off-white: #f5f5f5;
     margin-top: 0px - $i;
   }
 
+}
+
+// IMAGE PRESETS
+
+@for $i from 1 through 5 {
+  .blur-#{$i} {
+    filter: blur(#{$i}px);
+  }
+
+  .brightness-#{$i * 20} {
+    filter: brightness(0% + #{$i * 20});
+  }
+
+  .contrast-#{$i * 20} {
+    filter: contrast(0% + #{$i * 20});
+  }
+
+  // .grayscale-#{$i * 20} {
+  //   filter: grayscale(0% + #{$i * 20});
+  // }
+  
+  .sepia-#{$i * 20} {
+    filter: sepia(0% + #{$i * 20});
+  }
+  
+  .saturate-#{$i} {
+    filter: saturate(#{$i});
+  }
+
+  .opacity-#{$i * 20} {
+    opacity: ($i * 20) / 100;
+  }
 }
 
 // FONT PRESETS
@@ -139,12 +174,24 @@ strong {
   font-family: sand;
 }
 
-//default to slab font
 h1, h2, h3, p,
 button span,
 mat-card-title,
 mat-card-subtitle {
     font-family: slab !important;
+}
+
+// STYLES 
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -205,6 +252,17 @@ h1.header {
 
 .no-pad {
   padding: 0px;
+}
+
+.full-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+// MEDIA QUERIES (DYNAMIC SIZING)
+
+@media screen and (max-width: 276px) {
 }
 
 /*material edits*/
