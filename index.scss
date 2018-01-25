@@ -3,19 +3,23 @@
 $white: #fff;
 $off-white: #f5f5f5;
 
-[color-white] {
+[color-white],
+.color-white {
   color: $white !important;
 }
 
-[back-white] {
+[back-white],
+.back-white {
   background: $white !important;
 }
 
-[color-off] {
+[color-off],
+.color-off {
   color: $off-white !important;
 }
 
-[back-off] {
+[back-off],
+.back-off {
   background: $off-white !important;
 }
 
@@ -121,11 +125,11 @@ $off-white: #f5f5f5;
   // .grayscale-#{$i * 20} {
   //   filter: grayscale(0% + #{$i * 20});
   // }
-  
+
   .sepia-#{$i * 20} {
     filter: sepia(0% + #{$i * 20});
   }
-  
+
   .saturate-#{$i} {
     filter: saturate(#{$i});
   }
@@ -164,6 +168,10 @@ $off-white: #f5f5f5;
   font-family: sand !important;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 html {
   font-family: slab !important;
   background-color: $off-white;
@@ -181,7 +189,7 @@ mat-card-subtitle {
     font-family: slab !important;
 }
 
-// STYLES 
+// STYLES
 
 body {
   width: 100%;
@@ -200,6 +208,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.front {
+  z-index: 1000;
 }
 
 .txt-c {
@@ -258,6 +270,21 @@ h1.header {
   position: fixed;
   width: 100%;
   height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+[my-button] {
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px 30px;
+  background: transparent;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+[my-button]:hover {
+  color: white !important;
 }
 
 // MEDIA QUERIES (DYNAMIC SIZING)
