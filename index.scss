@@ -352,6 +352,10 @@ a {
   z-index: 1000;
 }
 
+.top {
+  z-index: 1010;
+}
+
 .txt-c {
   text-align: center;
 }
@@ -388,7 +392,7 @@ h1.header {
 }
 
 .shadow-1 {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
 }
 
 .spacer {
@@ -417,6 +421,10 @@ h1.header {
 
 .cover {
   object-fit: cover;
+}
+
+.fit {
+  object-fit: contain;
 }
 
 .hover-ignore {
