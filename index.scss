@@ -432,8 +432,12 @@ h1.header {
   object-fit: contain;
 }
 
-.hover-ignore {
+.event-ignore {
   pointer-events: none;
+}
+
+.event-visible {
+  pointer-events: visible;
 }
 
 [my-button] {
