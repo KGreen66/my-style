@@ -26,17 +26,17 @@ $gray: #D9D9D9;
 
 // FLEX PRESETS
 
-[row] {
+[row], .row {
   display: flex;
   flex-direction: row;
 }
 
-[column] {
+[column], .column {
   display: flex;
   flex-direction: column;
 }
 
-[wrap] {
+[wrap], .wrap {
   flex-wrap: wrap;
 }
 
@@ -398,7 +398,7 @@ h1.header {
 }
 
 .shadow-1 {
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
 }
 
 .spacer {
@@ -441,7 +441,10 @@ h1.header {
   pointer-events: visible;
 }
 
-[my-button] {
+// WR UI
+
+[wr-button], 
+.wr-button {
   border: 2px solid;
   border-color: rgba($gray, .8) !important;
   color: $gray;
@@ -453,26 +456,30 @@ h1.header {
   margin: 10px;
 }
 
-[my-button]:hover {
+[wr-button]:hover, 
+.wr-button:hover {
   color: white !important;
   background-color: rgba($gray, .7) !important;
 }
 
-/*material edits*/
+.wr-card {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .1); 
 
-mat-card {
-  margin: 5px;
-
-  img.pull-right {
-    float: right;
-    width: 100px;
+  .card-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
-mat-input-container {
-  width: 100%;
-}
-
-.mat-button-wrapper i {
-  margin-top: 2px;
+.wr-input {
+  padding:  10px;
+  font-size: 1.2em;
+  font-family:  slab;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  border:  none;
 }
