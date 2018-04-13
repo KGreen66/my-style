@@ -497,3 +497,19 @@ h1.header {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   border:  none;
 }
+
+.wr-mat-input {
+  color: gray;
+  background:  none;
+  padding: 7px 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  font-family: slab;border: none;
+  border-bottom: rgba(gray, .3) solid 2px;
+  transition:  all .3s ease;
+}
+
+.wr-mat-input:focus {
+  border-bottom-color: rgba(gray, 1);
+  outline:  none;
+}
