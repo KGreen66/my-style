@@ -1,0 +1,23 @@
+{
+  "name": "wr-style",
+  "version": "1.0.0",
+  "description": "common styles and class",
+  "main": "index.css",
+  "scripts": {
+    "compile": "node-sass --output-style compressed ./*.scss css/style.css",
+    "watch": "node-sass --output-style compressed -w ./*.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjintroverted/my-style.git"
+  },
+  "author": "kjintroverted",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjintroverted/my-style/issues"
+  },
+  "homepage": "https://github.com/kjintroverted/my-style#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
